@@ -1,3 +1,119 @@
 * {
-    box-sizing:border-box;
+	box-sizing: border-box;
+	font-family: Commisioner, sans-serif;
+}
+
+html {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(75, 27, 27);
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: Questrial, sans-serif;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+	padding: 5px;
+	font-size: 6vw;
+	font-weight: 100;
+    text-align: center;
+    width:600px;
+    margin-left:calc(50% - 300px);
+    margin-top: 100px;
+    background:linear-gradient(to right, rgb(24, 44, 155), rgb(5, 57, 82));
+    border:3px solid white;
+    color:white;
+}
+
+.main {
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	animation: adjust 100s;
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	transition: 1s;
+	height: 70px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	top: calc(50% - 70px);
+	overflow: visible;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	padding: 25px;
+	border-radius: 40px;
+	background: #2674e8;
+	box-shadow: 20px 20px 60px #2075c5, -20px -20px 60px #2cabff;
+	transition: 1s;
+	font-size: 20px;
+}
+
+li a[css-data="2"] {
+	background: #2660e8;
+	box-shadow: 20px 20px 60px #2052c5, -20px -20px 60px #2c6eff;
+}
+
+li a[css-data="3"] {
+	background: #3655ec;
+	box-shadow: 20px 20px 60px #2e48c9, -20px -20px 60px #3e62ff;
+}
+
+li a[css-data="4"] {
+	background: #423fd9;
+	box-shadow: 20px 20px 60px #3836b8, -20px -20px 60px #4c48fa;
+}
+
+li a[css-data="5"] {
+	background: #7747fa;
+	box-shadow: 20px 20px 60px #653cd5, -20px -20px 60px #8952ff;
+}
+
+li a:hover {
+	transform: scale(1.1);
+}
+
+@keyframes adjust {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	h1 {
+		font-size: 10vw;
+	}
 }
