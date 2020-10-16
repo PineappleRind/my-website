@@ -160,6 +160,37 @@ body.dark h1 {
 	  opacity:1;
 	  display:block;
   }
+
+
+/* Tooltip text */
+.subheading .tooltiptext {
+  background-color: rgb(13, 170, 65);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 120px;
+  left: 50%;
+  bottom:100px;
+  margin-left: -60px;
+  opacity:0;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  transition:0.2s;
+}
+
+.subheading .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	top: 100%; /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(13, 170, 65) transparent transparent transparent;
+  }
   
   @-webkit-keyframes fadein {
 	  from {bottom:0; opacity:0;}

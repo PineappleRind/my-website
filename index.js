@@ -15,3 +15,13 @@ window.addEventListener("keydown", function (e) {
       y.style.display = 'none';
     },4000)
   }
+
+function copy() { 
+  var text = "pr#0215";
+  navigator.clipboard.writeText(text)
+  let tooltip = document.getElementById('copied');
+  tooltip.style.opacity = '1';
+  setTimeout(function(){
+    tooltip.style.opacity = '0';
+  },1000);
+}
