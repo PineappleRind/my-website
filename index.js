@@ -1,7 +1,22 @@
-window.addEventListener("keydown", function (e) {
-    if (e.key === 'y') {
-      window.location.href = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
-    }
+let r = "c";
+let f = "r";
+
+window.addEventListener("keydown", function(e) {
+  if (e.key === f) {
+    window.addEventListener("keydown", function(e) {
+      if (e.key === 'i') {
+        window.addEventListener("keydown", function(e) {
+          if (e.key === r) {
+            window.addEventListener("keydown", function(e) {
+              if (e.key === 'k') {
+                window.location.href = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
+              }
+            })
+          }
+        })
+      }
+    })
+  }
   })
 
   function snackbar() {
@@ -17,7 +32,7 @@ window.addEventListener("keydown", function (e) {
   }
 
 function copy() { 
-  var text = "pr#0215";
+  let text = "pr#0215";
   navigator.clipboard.writeText(text)
   let tooltip = document.getElementById('copied');
   tooltip.style.opacity = '1';
