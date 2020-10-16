@@ -24,11 +24,18 @@ window.addEventListener("keydown", function(e) {
     x.className = "appear";
     let y = document.getElementById("overlay");
     y.style.display = 'block';
+    y.addEventListener("click", function(){
+      y.style.opacity = '0';
+      x.className = x.className.replace("appear", "");
+      setTimeout(function(){
+        y.style.display = 'block';
+      }, 1000)
+    });
     setTimeout(function() {y.style.opacity = '1';},1)
-    setTimeout(function(){ x.className = x.className.replace("appear", ""); y.style.opacity = '0'; }, 3000);
+    setTimeout(function(){ x.className = x.className.replace("appear", ""); y.style.opacity = '0';}, 3000);
     setTimeout(function() {
       y.style.display = 'none';
-    },4000)
+    },4000);
   }
 
 function copy() { 
