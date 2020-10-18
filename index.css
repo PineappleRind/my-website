@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: Commisioner, sans-serif;
+	font-family: Google Sans, sans-serif;
 }
 
 hr {
@@ -14,12 +14,12 @@ body {
 }
 
 .title {
-	font-family: Questrial, sans-serif;
+	font-family: Google Sans, sans-serif;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 	padding: 5px;
 	font-size: 6vw;
-	font-weight: 100;
+	font-weight: 900;
     text-align: center;
     width:600px;
     margin-left:calc(50% - 300px);
